@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace PilotMax\ModelHistory;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use VendorName\Skeleton\Commands\SkeletonCommand;
+use PilotMax\ModelHistory\Commands\ModelHistoryCommand;
 
-class SkeletonServiceProvider extends PackageServiceProvider
+class ModelHistoryServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
@@ -16,10 +16,10 @@ class SkeletonServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('skeleton')
+            ->name('model-history')
             ->hasConfigFile()
             ->hasViews()
-            ->hasMigration('create_skeleton_table')
-            ->hasCommand(SkeletonCommand::class);
+            ->hasMigration('create_model-history_table')
+            ->hasCommand(ModelHistoryCommand::class);
     }
 }

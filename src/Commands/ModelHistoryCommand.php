@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace PilotMax\ModelHistory\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class ModelHistoryCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'model-history';
 
     public $description = 'My command';
 
