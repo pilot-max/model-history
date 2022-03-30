@@ -2,9 +2,9 @@
 
 namespace PilotMax\ModelHistory;
 
+use PilotMax\ModelHistory\Commands\ModelHistoryCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use PilotMax\ModelHistory\Commands\ModelHistoryCommand;
 
 class ModelHistoryServiceProvider extends PackageServiceProvider
 {
